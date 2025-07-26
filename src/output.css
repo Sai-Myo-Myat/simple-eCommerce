@@ -446,6 +446,12 @@
   .bg-slate-300 {
     background-color: var(--color-slate-300);
   }
+  .bg-slate-400 {
+    background-color: var(--color-slate-400);
+  }
+  .bg-slate-500 {
+    background-color: var(--color-slate-500);
+  }
   .bg-white {
     background-color: var(--color-white);
   }
@@ -732,6 +738,16 @@
   .md\:bg-\[url\(\.\.\/assets\/cloud-hero\.avif\)\] {
     @media (width >= 48rem) {
       background-image: url(../assets/cloud-hero.avif);
+    }
+  }
+  .md\:py-3 {
+    @media (width >= 48rem) {
+      padding-block: calc(var(--spacing) * 3);
+    }
+  }
+  .md\:py-32 {
+    @media (width >= 48rem) {
+      padding-block: calc(var(--spacing) * 32);
     }
   }
   .md\:text-2xl {
