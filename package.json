@@ -1,0 +1,15 @@
+{
+  "name": "simple-eCommerce",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Sai-Myo-Myat/simple-eCommerce.git",
+  "author": "Sai Myo Myat <saimyomyat511@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "watch:css": "npx @tailwindcss/cli -i ./src/index.css -o ./src/output.css --watch"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.11",
+    "tailwindcss": "^4.1.11"
+  }
+}
