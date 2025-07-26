@@ -17,6 +17,7 @@
     --color-indigo-600: oklch(51.1% 0.262 276.966);
     --color-slate-50: oklch(98.4% 0.003 247.858);
     --color-slate-100: oklch(96.8% 0.007 247.896);
+    --color-slate-200: oklch(92.9% 0.013 255.508);
     --color-slate-300: oklch(86.9% 0.022 252.894);
     --color-slate-400: oklch(70.4% 0.04 256.788);
     --color-slate-500: oklch(55.4% 0.046 257.417);
@@ -373,6 +374,9 @@
   .justify-end {
     justify-content: flex-end;
   }
+  .gap-4 {
+    gap: calc(var(--spacing) * 4);
+  }
   .gap-8 {
     gap: calc(var(--spacing) * 8);
   }
@@ -429,6 +433,12 @@
   }
   .bg-slate-100 {
     background-color: var(--color-slate-100);
+  }
+  .bg-slate-200 {
+    background-color: var(--color-slate-200);
+  }
+  .bg-slate-300 {
+    background-color: var(--color-slate-300);
   }
   .bg-white {
     background-color: var(--color-white);
@@ -558,6 +568,15 @@
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
+  }
+  .text-\[\#0dc1fd\] {
+    color: #0dc1fd;
+  }
+  .text-\[\#30bae8\] {
+    color: #30bae8;
+  }
+  .text-\[\#\] {
+    color: #;
   }
   .text-blue-500 {
     color: var(--color-blue-500);
@@ -765,6 +784,11 @@
   .lg\:text-\[\#0dc1fd\] {
     @media (width >= 64rem) {
       color: #0dc1fd;
+    }
+  }
+  .lg\:text-\[\#30bae8\] {
+    @media (width >= 64rem) {
+      color: #30bae8;
     }
   }
   .lg\:text-slate-300 {
