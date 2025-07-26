@@ -413,6 +413,12 @@
   .bg-\[\#0d6efd\] {
     background-color: #0d6efd;
   }
+  .bg-\[\#30bae8\] {
+    background-color: #30bae8;
+  }
+  .bg-\[\#\] {
+    background-color: #;
+  }
   .bg-blue-600 {
     background-color: var(--color-blue-600);
   }
@@ -696,6 +702,11 @@
   .md\:mb-0 {
     @media (width >= 48rem) {
       margin-bottom: calc(var(--spacing) * 0);
+    }
+  }
+  .md\:h-\[80vh\] {
+    @media (width >= 48rem) {
+      height: 80vh;
     }
   }
   .md\:w-1\/2 {
