@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth overflow-x-hidden">
   <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap"
+      rel="stylesheet"
+    />
     <meta name="theme-color" content="#1598FC" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,7 +19,7 @@
       content="Zeabix CloudBoost Pro helps your team build or migrate apps using proven cloud-native architecture and modern DevOps practices."
     />
   </head>
-  <body>
+  <body style="font-family: 'Roboto', Arial, sans-serif">
     <!-- Booking Portal Modal -->
     <div
       id="booking-portal"
@@ -96,7 +100,7 @@
     <!-- Hero Section -->
     <header
       id="hero"
-      class="w-dvw h-[70vh] md:h-[80vh] bg-gradient-to-r from-slate-800 to-[#0b74c4] bg-[url(/assets/cloud-hero.avif)] bg-no-repeat bg-cover flex flex-col items-end"
+      class="w-dvw h-[70vh] lg:h-[80vh] bg-gradient-to-r from-slate-800 to-[#0b74c4] bg-[url(/assets/cloud-hero.avif)] bg-no-repeat bg-cover flex flex-col items-end"
       aria-label="Site header"
     >
       <nav aria-label="Main Navigation" class="z-10">
@@ -156,8 +160,9 @@
           (Re)Architect Your App for the Cloud
         </h1>
         <p class="mt-4 text-lg text-slate-300 max-w-2xl mx-auto">
-          Zeabix CloudBoost Pro helps your team build or migrate apps using
-          proven cloud-native architecture and modern DevOps practices.
+          <span class="font-bold underline">Zeabix CloudBoost Pro </span> helps
+          your team build or migrate apps using proven cloud-native architecture
+          and modern DevOps practices.
         </p>
         <a
           href="#cta"
@@ -391,7 +396,14 @@
     <!-- Testimonials Section -->
     <section class="py-16 bg-slate-50">
       <div class="relative max-w-4xl mx-auto px-6 text-center">
-        <h2 class="text-3xl font-bold mb-12">What Clients Say</h2>
+        <h2 class="text-3xl font-bold">What Clients Say...</h2>
+        <div class="mb-12">
+          <i class="fa fa-star text-yellow-500 animate-pulse mb-4"></i>
+          <i class="fa fa-star text-yellow-500 mb-4"></i>
+          <i class="fa fa-star text-yellow-500 animate-pulse mb-4"></i>
+          <i class="fa fa-star text-yellow-500 mb-4"></i>
+          <i class="fa fa-star text-yellow-500 animate-pulse mb-4"></i>
+        </div>
         <div class="grid lg:grid-cols-2 gap-12">
           <div>
             <img
@@ -432,7 +444,10 @@
     </section>
 
     <!-- CTA Section -->
-    <section id="cta" class="py-20 md:py-32 bg-blue-600 text-white text-center">
+    <section
+      id="cta"
+      class="py-20 md:py-32 bg-[#0b74c4] text-white text-center"
+    >
       <h2 class="text-3xl font-bold" id="cta-heading">
         Modernize Your App, the Right Way
       </h2>
