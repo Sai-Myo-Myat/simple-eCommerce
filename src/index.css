@@ -17,9 +17,13 @@
 
 ul {
   display: flex;
+  justify-content: end;
+  width: 100%;
+  padding: 8px 16px;
+  z-index: 200;
   position: fixed;
-  right: 40px;
-  top: 20px;
+  left: 0px;
+  top: 0px;
   gap: 25px;
 }
 
@@ -105,4 +109,14 @@ ul li .title {
 ul li:hover .title {
   transform: scale(1);
   transition-delay: 0.25s;
+}
+
+.nav-bg {
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: background 0.5s;
+}
+
+.nav-bg.fade-out {
+  background-color: transparent;
+  transition: background-color 0.5s;
 }
