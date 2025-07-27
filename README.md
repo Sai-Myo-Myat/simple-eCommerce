@@ -14,11 +14,16 @@ This is a responsive landing page for a hypothetical service called **Zeabix Clo
 
 - HTML5 + Tailwind CSS
 - Unsplash & RandomUser for placeholder images
-- Some JavaScript for scroll animations
+- JavaScript for interactivity
+- font-awesome and svgs
+- confetti
 
-## 📱 Responsiveness
+## Features
 
-Mobile-first layout with Tailwind's responsive grid/flex system. Optimized for mobile, tablet, and desktop.
+- Responsive Design 📱💻
+- Fully Accessible ♿️
+- SEO Friendly 🔎
+- Preview on social media share 📱💻
 
 ## 🧠 About
 
