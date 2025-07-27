@@ -478,8 +478,17 @@
     --tw-gradient-to: #0b74c4;
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
+  .bg-contain {
+    background-size: contain;
+  }
   .bg-cover {
     background-size: cover;
+  }
+  .bg-fixed {
+    background-attachment: fixed;
+  }
+  .bg-center {
+    background-position: center;
   }
   .bg-no-repeat {
     background-repeat: no-repeat;
@@ -772,6 +781,11 @@
   .lg\:bg-\[rgba\(0\,0\,0\,0\.2\)\] {
     @media (width >= 64rem) {
       background-color: rgba(0,0,0,0.2);
+    }
+  }
+  .lg\:bg-cover {
+    @media (width >= 64rem) {
+      background-size: cover;
     }
   }
   .lg\:text-3xl {
