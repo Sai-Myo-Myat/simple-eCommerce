@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html class="scroll-smooth overflow-x-hidden">
+<html lang="en" class="scroll-smooth overflow-x-hidden">
   <head>
+    <meta name="theme-color" content="#1598FC" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
@@ -15,35 +16,71 @@
     />
   </head>
   <body>
+    <a
+      href="#main-content"
+      class="sr-only focus:not-sr-only bg-blue-700 text-white p-2 absolute top-2 left-2 z-50"
+      >Skip to main content</a
+    >
     <!-- Hero Section -->
     <header
       id="hero"
       class="w-dvw h-[70vh] md:h-[80vh] bg-gradient-to-r from-slate-800 to-[#0b74c4] bg-[url(/assets/cloud-hero.avif)] bg-no-repeat bg-cover flex flex-col items-end"
+      aria-label="Site header"
     >
-      <ul id="nav-ul">
-        <a href="#hero">
-          <li style="--i: #4372dd; --j: #30bae8">
-            <span class="icon"><i class="fa fa-home"></i></span>
-            <span class="title">Home</span>
+      <nav aria-label="Main Navigation" class="z-10">
+        <ul id="nav-ul" class="flex" role="menubar">
+          <li role="none" style="--i: #4372dd; --j: #30bae8">
+            <a
+              href="#hero"
+              role="menuitem"
+              aria-label="Home"
+              tabindex="0"
+              class="focus:outline-2 focus:outline-purple-500"
+              aria-current="page"
+            >
+              <span class="icon"
+                ><i class="fa fa-home" aria-hidden="true"></i
+              ></span>
+              <span class="title">Home</span>
+            </a>
           </li>
-        </a>
-        <a href="#features">
-          <li style="--i: #4372dd; --j: #30bae8">
-            <span class="icon"><i class="fa fa-cloud"></i></span>
-            <span class="title">Features</span>
+          <li role="none" style="--i: #4372dd; --j: #30bae8">
+            <a
+              href="#features"
+              role="menuitem"
+              aria-label="Features"
+              tabindex="0"
+              class="focus:outline-2 focus:outline-blue-500"
+            >
+              <span class="icon"
+                ><i class="fa fa-cloud" aria-hidden="true"></i
+              ></span>
+              <span class="title">Features</span>
+            </a>
           </li>
-        </a>
-        <a href="#cta">
-          <li style="--i: #4372dd; --j: #30bae8">
-            <span class="icon"><i class="fa fa-inbox"></i></span>
-            <span class="title">Contacts</span>
+          <li role="none" style="--i: #4372dd; --j: #30bae8">
+            <a
+              href="#cta"
+              role="menuitem"
+              aria-label="Contacts"
+              tabindex="0"
+              class="focus:outline-2 focus:outline-blue-500"
+            >
+              <span class="icon"
+                ><i class="fa fa-inbox" aria-hidden="true"></i
+              ></span>
+              <span class="title">Contacts</span>
+            </a>
           </li>
-        </a>
-      </ul>
+        </ul>
+      </nav>
       <div
         class="w-full bg-[rgba(0,0,0,0.5)] lg:bg-[rgba(0,0,0,0.2)] lg:rounded-bl-4xl lg:w-1/2 h-full p-4 text-center flex flex-col justify-center items-center"
       >
-        <h1 class="text-2xl sm:text-4xl lg:text-3xl font-bold text-[#1598FC]">
+        <h1
+          id="main-content"
+          class="text-2xl sm:text-4xl lg:text-3xl font-bold text-[#1598FC]"
+        >
           (Re)Architect Your App for the Cloud
         </h1>
         <p class="mt-4 text-lg text-slate-300 max-w-2xl mx-auto">
@@ -53,6 +90,7 @@
         <a
           href="#cta"
           class="mt-8 inline-block bg-[#0d6efd] text-white px-6 py-3 rounded-full font-medium hover:bg-blue-700 transition"
+          aria-label="Get a Free Consultation"
         >
           Get a Free Consultation
         </a>
@@ -70,10 +108,11 @@
             <img
               src="./assets/services-vector.png"
               class="aspect-square object-center animate-bounce-slowly"
+              alt="Cloud services vector illustration"
             />
           </div>
           <div class="w-full lg:w-1/2">
-            <h2 class="text-3xl font-bold text-center mb-12">
+            <h2 class="text-3xl font-bold text-center mb-12 text-white">
               What You'll Get with
               <span class="text-[#1598FC]"> Zeabix CloudBoost Pro</span>
             </h2>
@@ -285,7 +324,7 @@
           <div>
             <img
               src="https://randomuser.me/api/portraits/men/1.jpg"
-              alt="User"
+              alt="Portrait of Alex M., Head of Engineering"
               class="mx-auto w-16 h-16 rounded-full mb-4 hover:animate-pulse"
             />
             <blockquote class="text-slate-700 italic text-sm">
@@ -302,7 +341,7 @@
           <div>
             <img
               src="https://randomuser.me/api/portraits/women/65.jpg"
-              alt="User"
+              alt="Portrait of Priya K., Technical Lead"
               class="mx-auto w-16 h-16 rounded-full mb-4 hover:animate-pulse"
             />
             <blockquote class="text-slate-700 italic text-sm">
@@ -322,7 +361,9 @@
 
     <!-- CTA Section -->
     <section id="cta" class="py-20 md:py-32 bg-blue-600 text-white text-center">
-      <h2 class="text-3xl font-bold">Modernize Your App, the Right Way</h2>
+      <h2 class="text-3xl font-bold" id="cta-heading">
+        Modernize Your App, the Right Way
+      </h2>
       <p class="mt-4 text-lg">
         Book a consultation with our architect to get a tailored cloud-native
         plan.
@@ -330,15 +371,16 @@
       <a
         href="#"
         class="mt-6 inline-block bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-slate-100 transition"
+        aria-labelledby="cta-heading"
       >
         Book Free Consultation
       </a>
     </section>
 
     <!-- Footer -->
-    <!-- <footer class="py-6 bg-slate-400 text-center text-sm text-slate-">
+    <footer class="py-6 bg-slate-400 text-center text-sm text-slate-900">
       <p>&copy; 2025 Zeabix CloudBoost Pro.</p>
-    </footer> -->
+    </footer>
   </body>
   <script src="index.js"></script>
 </html>

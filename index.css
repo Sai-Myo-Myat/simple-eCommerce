@@ -42,6 +42,12 @@ ul li {
   transition: 0.5s;
 }
 
+ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 ul li::before {
   content: "";
   position: absolute;
