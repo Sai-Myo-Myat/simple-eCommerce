@@ -120,3 +120,33 @@ ul li:hover .title {
   background-color: transparent;
   transition: background-color 0.5s;
 }
+
+.animate-bounce-slowly {
+  animation: bounce-slowly 2s ease-in 0.5s infinite;
+}
+
+@keyframes bounce-slowly {
+  20% {
+    transform: translateY(-2%);
+    transform: translateX(1%);
+  }
+  90% {
+    transform: translateY(2%);
+    transform: translateX(-1%);
+  }
+}
+
+.animate-bounce-reverse {
+  animation: bounce-reverse 2s ease-in 0.5s infinite;
+}
+
+@keyframes bounce-reverse {
+  20% {
+    transform: translateY(2%);
+    transform: translateX(-1%);
+  }
+  90% {
+    transform: translateY(-2%);
+    transform: translateX(1%);
+  }
+}
