@@ -31,6 +31,12 @@ const closeBtn = document.getElementById("close-booking");
 const successMessage = document.getElementById("booking-success");
 const bookingFormContainer = document.getElementById("booking-form-container");
 const form = document.getElementById("booking-form");
+
+const closePortal = () => {
+  portal.classList.add("hidden");
+  successMessage.classList.replace("flex", "hidden");
+  bookingFormContainer.classList.remove("hidden");
+};
 if (openBtn && portal && closeBtn && form) {
   openBtn.addEventListener("click", function (e) {
     e.preventDefault();
@@ -38,10 +44,12 @@ if (openBtn && portal && closeBtn && form) {
     portal.classList.add("flex");
   });
   closeBtn.addEventListener("click", function () {
-    portal.classList.add("hidden");
+    closePortal();
   });
   portal.addEventListener("click", function (e) {
-    if (e.target === portal) portal.classList.add("hidden");
+    if (e.target === portal) {
+      closePortal();
+    }
   });
   form.addEventListener("submit", function (e) {
     e.preventDefault();
