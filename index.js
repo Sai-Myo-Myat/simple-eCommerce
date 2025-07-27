@@ -28,6 +28,8 @@ window.addEventListener("scroll", () => {
 const openBtn = document.getElementById("open-booking");
 const portal = document.getElementById("booking-portal");
 const closeBtn = document.getElementById("close-booking");
+const successMessage = document.getElementById("booking-success");
+const bookingFormContainer = document.getElementById("booking-form-container");
 const form = document.getElementById("booking-form");
 if (openBtn && portal && closeBtn && form) {
   openBtn.addEventListener("click", function (e) {
@@ -43,9 +45,13 @@ if (openBtn && portal && closeBtn && form) {
   });
   form.addEventListener("submit", function (e) {
     e.preventDefault();
-    // You can add AJAX here
-    alert("Thank you for booking!");
-    portal.classList.add("hidden");
+    confetti({
+      particleCount: 100,
+      spread: 70,
+      origin: { y: 0.6 },
+    });
+    bookingFormContainer.classList.add("hidden");
+    successMessage.classList.replace("hidden", "flex");
     form.reset();
   });
 }
