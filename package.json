@@ -6,7 +6,7 @@
   "author": "Sai Myo Myat <saimyomyat511@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "watch:css": "npx @tailwindcss/cli -i ./src/index.css -o ./src/output.css --watch"
+    "watch:css": "npx @tailwindcss/cli -i ./index.css -o ./output.css --watch"
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.1.11",
