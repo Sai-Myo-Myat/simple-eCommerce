@@ -23,3 +23,29 @@ window.addEventListener("scroll", () => {
   }
   lastScroll = currentScroll;
 });
+
+//booking portal modal form
+const openBtn = document.getElementById("open-booking");
+const portal = document.getElementById("booking-portal");
+const closeBtn = document.getElementById("close-booking");
+const form = document.getElementById("booking-form");
+if (openBtn && portal && closeBtn && form) {
+  openBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    portal.classList.remove("hidden");
+    portal.classList.add("flex");
+  });
+  closeBtn.addEventListener("click", function () {
+    portal.classList.add("hidden");
+  });
+  portal.addEventListener("click", function (e) {
+    if (e.target === portal) portal.classList.add("hidden");
+  });
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    // You can add AJAX here
+    alert("Thank you for booking!");
+    portal.classList.add("hidden");
+    form.reset();
+  });
+}

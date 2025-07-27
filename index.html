@@ -16,6 +16,65 @@
     />
   </head>
   <body>
+    <!-- Booking Portal Modal -->
+    <div
+      id="booking-portal"
+      class="fixed inset-0 bg-[rgba(0,0,0,0.8)] items-center justify-center z-50 hidden"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="booking-title"
+    >
+      <div class="bg-white rounded-lg shadow-lg p-8 w-full max-w-md relative">
+        <button
+          id="close-booking"
+          class="absolute top-2 right-2 text-gray-500 hover:text-gray-800 text-2xl"
+          aria-label="Close booking form"
+        >
+          &times;
+        </button>
+        <h2 id="booking-title" class="text-2xl font-bold mb-4">
+          Book a Free Consultation
+        </h2>
+        <form id="booking-form" class="space-y-4">
+          <div>
+            <label
+              for="booking-name"
+              class="block text-left font-medium text-gray-700"
+              >Name</label
+            >
+            <input
+              type="text"
+              id="booking-name"
+              name="name"
+              required
+              class="mt-1 block w-full rounded border border-gray-800 py-2 px-4 focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+              autocomplete="name"
+            />
+          </div>
+          <div>
+            <label
+              for="booking-email"
+              class="block text-left font-medium text-gray-700"
+              >Email</label
+            >
+            <input
+              type="email"
+              id="booking-email"
+              name="email"
+              required
+              class="mt-1 block w-full rounded border border-gray-800 py-2 px-4 focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+              autocomplete="email"
+            />
+          </div>
+          <button
+            type="submit"
+            class="w-full bg-blue-600 text-white py-2 rounded font-semibold hover:bg-blue-700 transition"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
     <a
       href="#main-content"
       class="sr-only focus:not-sr-only bg-blue-700 text-white p-2 absolute top-2 left-2 z-50"
@@ -370,8 +429,10 @@
       </p>
       <a
         href="#"
+        id="open-booking"
         class="mt-6 inline-block bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-slate-100 transition"
         aria-labelledby="cta-heading"
+        role="button"
       >
         Book Free Consultation
       </a>
