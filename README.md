@@ -1,6 +1,6 @@
-# Zeabix CloudBoost Pro – Landing Page
+# CloudBoost Pro – Landing Page
 
-This is a responsive landing page for a hypothetical service called **Zeabix CloudBoost Pro**, inspired by Zeabix's actual service offering to help businesses refactor their apps for the cloud.
+This is a responsive landing page for a hypothetical service called ** CloudBoost Pro**, inspired by actual service offering to help businesses refactor their apps for the cloud.
 
 ## 📐 Page Sections
 
